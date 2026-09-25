@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a; /* Fondo general oscuro */
+    color: #ffffff;
+}
+
+/* Encabezado */
+header {
+    background-color: #222222;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00e5ff; /* Turquesa/Cian brillante */
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: #000000; /* Fondo completamente negro */
+    text-align: center;
+    padding: 16px 20px;
+}
+
+nav a {
+    color: #00e5ff; /* Enlaces en turquesa */
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido Principal en 3 columnas */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tarjetas oscuras con borde cian (.hero, .css, .javascript) */
+main section {
+    background-color: #282828;
+    border: 1px solid #00e5ff; /* Borde delgado turquesa */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 30px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00e5ff; /* Título de la tarjeta en turquesa */
+    margin-bottom: 15px;
+}
+
+main section p {
+    font-size: 13.5px;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* Botones rellenados de color cian con texto oscuro */
+main section button {
+    background-color: #00e5ff;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+main section button:hover {
+    background-color: #00b8cc;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 13px;
+    color: #ffffff;
+}
