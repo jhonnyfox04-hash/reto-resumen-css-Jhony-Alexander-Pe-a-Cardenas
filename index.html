@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Curso de Programación</title>
-    <link rel="stylesheet" href="css/reto1.css">
-    <link rel="stylesheet" href="css/reto2.css">
-    <link rel="stylesheet" href="css/reto3.css">
     
+    <!-- Etiqueta <link> con un id para poder cambiar su href mediante JavaScript -->
+    <link id="theme-style" rel="stylesheet" href="css/reto1.css">
 </head>
 
 <body>
@@ -18,16 +16,15 @@
         <p>Descubre el mundo del desarrollo web</p>
     </header>
 
+    
     <nav>
-        <a href="index.html">Sin estilo</a>
-        <a href="index2.html">Estilo1</a>
-        <a href="index3.html">Estilo2</a>
-        <a href="index4.html">Estilo3</a>
-        
+        <button onclick="cambiarEstilo('')">Sin estilo</button>
+        <button onclick="cambiarEstilo('css/reto1.css')">Estilo1</button>
+        <button onclick="cambiarEstilo('css/reto2.css')">Estilo2</button>
+        <button onclick="cambiarEstilo('css/reto3.css')">Estilo3</button>
     </nav>
 
     <main>
-
         <section class="hero">
             <h2>HTML</h2>
             <p>
@@ -54,12 +51,18 @@
             </p>
             <button>Aprender JavaScript</button>
         </section>
-
     </main>
 
     <footer>
         <p>Mi primera página web - 2026</p>
     </footer>
+
+    <!-- Script para realizar el cambio de hoja de estilo -->
+    <script>
+        function cambiarEstilo(rutaCss) {
+            document.getElementById('theme-style').href = rutaCss;
+        }
+    </script>
 
 </body>
 </html>
